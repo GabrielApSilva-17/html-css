@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Links</title>
+    <style>
+        /*
+
+        # = ID
+        . = Class
+        : = pseudo-class
+        :: = pseudo-element
+        > = Clilfren ou filho
+
+        */
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:link, a:visited {
+            background-color: white;
+            color: black;
+            border: 2px solid green;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        a:hover {
+            background-color: green;
+            color: white;
+        }
+        a:active {
+            color: yellow;
+        }
+        a::after {
+            content: '[link]';
+            text-decoration: none;
+            font-weight: 500;
+            color:chocolate;
+        }
+
+        .especial::after {
+           content: '⇐';
+        }
+
+        .especial::before {
+            content: '⇒';
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://github.com/gustavoguanabara/html-css/blob/master/aulas-pdf/13%20-%20Cores.pdf" target="_blank" class="especial">Repositório GitHub</a></li>
+        <li><a href="https://www.youtube.com/channel/UCuibilOBNQ5NLOcemTn_-yg" target="_blank" class="especial">Canal no YouTube</a></li>
+        <li><a href="https://www.pichau.com.br/monitor-gamer-gigabyte-g34wqc-a-34-pol-va-curvo-wqhd-1ms-144hz-freesync-premium-hdmi-dp-gigabyte-g34wqc-a" target="_blank" class="especial">Site da Pichal</a></li>
+    </ul>
+</body>
+</html>

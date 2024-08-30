@@ -1,0 +1,48 @@
+/*
+    em  HTML é id = em CSS é #
+    em HTML é class = em CSS é .
+    ID serve para um elemento.
+    CLASS serve para vários elementos e pode colocar varias class em um único elemento. 
+*/
+
+body { 
+    background-color: #46EAA0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main{
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+    background-color: #7E6BEA;
+    box-shadow: 20px 20px 100px #863b2ddc;
+    border-radius: 10px;
+
+}
+
+h1 {
+    color:#EBD74C;
+}
+
+h1#principal {
+    text-align: center;
+    background-color:#46EAA0;
+    border-radius: 50px;
+    color:#994739;
+}
+
+h2 {
+    color:#994739;
+}
+
+.basico{
+    color: #16cf1f;
+}
+
+.intermediario{
+    color: #f8db1f;
+}
+
+.avancado{
+    color: #c42d2d;
+}
